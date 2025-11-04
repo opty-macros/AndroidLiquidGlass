@@ -1,29 +1,34 @@
-## Build generated
-build/
+# Xcode
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
 DerivedData/
-
-ExportOptions.plist
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-*.pbxproj
-
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
-
-**.memgraph
-
-## Obj-C/Swift specific
-*.hmap
+build/
+*.xcarchive/
 *.ipa
+*.app
 *.dSYM.zip
-*.dSYM
+*.mobileprovision
+*.xcworkspace/
+Pods/
+Carthage/Build/
+.swiftpm/xcode/package.xcworkspace/
+.swiftpm/xcode/xcuserdata/
+.swiftpm/xcode/DerivedData/
+.swiftpm/xcode/build/
 
+# Swift Package Manager
 .build/
+
+# CocoaPods
+Pods/
+!Pods/Manifest.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+
+# Other
+.DS_Store
+.localized
