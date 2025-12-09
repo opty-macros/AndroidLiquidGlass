@@ -11,6 +11,14 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/${System.getenv("GH_GITHUB_ORGANIZATION")}/AndroidLiquidGlass")
+            credentials {
+                username = System.getenv("GH_PACKAGES_USERNAME")
+                password = System.getenv("GH_PACKAGES_TOKEN")
+            }
+        }
     }
 }
 dependencyResolutionManagement {
